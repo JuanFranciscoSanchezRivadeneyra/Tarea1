@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Venta</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .custom-container {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .custom-button {
+            width: 100%;
+            background-color: #008080;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-button:hover {
+            background-color: #005959;
+        }
+
+        .w3-text {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="w3-container custom-container w3-card-4">
+    <h2 class="w3-center">Modificar Venta</h2>
+    <form action="http://localhost/FarmaciaSanchez/modificar-venta.php" method="POST">
+        <label class="w3-text"><b>VentaID:</b></label>
+        <input class="w3-input w3-border" type="number" name="id" required><br><br>
+
+        <label class="w3-text"><b>Nombre:</b></label>
+        <input class="w3-input w3-border" type="text" name="nombre" required><br><br>
+
+        <label class="w3-text"><b>Categoría:</b></label>
+        <input class="w3-input w3-border" type="text" name="categoria" required><br><br>
+
+        <label class="w3-text"><b>Cantidad:</b></label>
+        <input class="w3-input w3-border" type="number" name="cantidad" required><br><br>
+
+        <label class="w3-text"><b>Fabricante:</b></label>
+        <input class="w3-input w3-border" type="text" name="fabricante" required><br><br>
+
+        <button class="custom-button w3-margin-top w3-green" type="submit">Modificar Venta</button>
+    </form>
+
+    <div class="w3-center" style="margin-top: 20px;">
+        <a href="http://localhost/FarmaciaSanchez/index.html" class="w3-button w3-blue custom-button">Volver al Índice</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Venta</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .custom-container {
+            margin-top: 50px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="w3-container custom-container">
+    <h2 class="w3-center">Eliminar Venta</h2>
+    <form action="http://localhost/FarmaciaSanchez/eliminar-venta.php" method="POST">
+        <label for="id">ID de la Venta a Eliminar:</label>
+        <input type="number" id="id" name="id" class="w3-input" required><br><br>
+        
+        <button type="submit" class="w3-button w3-red w3-block">Eliminar Venta</button>
+        
+    </form>
+
+    <button type="button" onclick="window.location.href='http://localhost/FarmaciaSanchez/index.html'" class="w3-button w3-blue w3-block" style="margin-top: 10px;">Volver al Índice</button>
+</div>
+
+</body>
+</html>

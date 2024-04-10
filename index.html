@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .custom-sidebar {
+            width: 250px;
+            background-color: #414242;
+            padding-top: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .custom-button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #343838;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Estilo para los contenedores de botones */
+        .button-container {
+            margin-bottom: 100px; /* Espacio entre contenedores */
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="w3-sidebar custom-sidebar">
+    <!-- Contenedor de botones para productos -->
+    <div class="button-container">
+        <button class="w3-bar-item w3-button custom-button productos" onclick="window.location.href='http://localhost/FarmaciaSanchez/mostrarproductos.php'">Mostrar Productos</button>
+        <button class="w3-bar-item w3-button custom-button productos" onclick="window.location.href='http://localhost/FarmaciaSanchez/insertarproducto.html'">Agregar Producto</button>
+        <button class="w3-bar-item w3-button custom-button productos" onclick="window.location.href='http://localhost/FarmaciaSanchez/eliminarproducto.html'">Eliminar Producto</button>
+        <button class="w3-bar-item w3-button custom-button productos" onclick="window.location.href='http://localhost/FarmaciaSanchez/modificarproducto.html'">Modificar Producto</button>
+    </div>
+
+    <!-- Contenedor de botones para fabricantes -->
+    <div class="button-container">
+        <button class="w3-bar-item w3-button custom-button fabricantes" onclick="window.location.href='http://localhost/FarmaciaSanchez/mostrarfabricantes.php'">Mostrar Fabricantes</button>
+        <button class="w3-bar-item w3-button custom-button fabricantes" onclick="window.location.href='http://localhost/FarmaciaSanchez/insertarFabricante.html'">Agregar Fabricante</button>
+        <button class="w3-bar-item w3-button custom-button fabricantes" onclick="window.location.href='http://localhost/FarmaciaSanchez/eliminarFabricante.html'">Eliminar Fabricante</button>
+        <button class="w3-bar-item w3-button custom-button fabricantes" onclick="window.location.href='http://localhost/FarmaciaSanchez/modificarFabricante.html'">Modificar Fabricante</button>
+    </div>
+
+    <!-- Contenedor de botones para ventas -->
+    <div class="button-container">
+        <button class="w3-bar-item w3-button custom-button ventas" onclick="window.location.href='http://localhost/FarmaciaSanchez/mostrarventas.php'">Mostrar Ventas</button>
+        <button class="w3-bar-item w3-button custom-button ventas" onclick="window.location.href='http://localhost/FarmaciaSanchez/insertarventa.html'">Agregar Venta</button>
+        <button class="w3-bar-item w3-button custom-button ventas" onclick="window.location.href='http://localhost/FarmaciaSanchez/eliminarventa.html'">Eliminar Venta</button>
+        <button class="w3-bar-item w3-button custom-button ventas" onclick="window.location.href='http://localhost/FarmaciaSanchez/modificarventa.html'">Modificar Venta</button>
+    </div>
+</div>
+
+</body>
+</html>
